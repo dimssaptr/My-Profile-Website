@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<head>
+    <title>Dimas Saputra | Personal Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f2f5;
+        }
+        header {
+            width: 100%;
+            background-color: #171717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            width: 100%;
+            height: auto;
+        }
+        header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #F50;
+            color: white;
+        }
+        .content {
+            width: 75%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .summary img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Header.jpeg" alt="Dimas Saputra - Library and Information Science">
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#" onclick="showSection('summary')">Summary</a></li>
+            <li><a href="#" onclick="showSection('experience')">Work Experience</a></li>
+            <li><a href="#" onclick="showSection('organization')">Organizational Experience</a></li>
+            <li><a href="#" onclick="showSection('education')">Education</a></li>
+            <li><a href="#" onclick="showSection('publication')">Publication</a></li>
+            <li><a href="#" onclick="showSection('multimedia')">Multimedia</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </aside>
+
+    <div class="content">
+        <div id="summary" class="section active">
+            <h2>Summary</h2>
+            <img src="PAS FOTO.jpg" alt="Profile Image of Dimas Saputra">
+            <p><strong>Address:</strong> Jl. Fatahilah No.24, Megucilik Village, Cirebon Regency</p>
+            <p><strong>Phone:</strong> +62 878-6965-9487</p>
+            <p><strong>Email:</strong> <a href="mailto:dimassaputra@upi.edu">dimassaputra@upi.edu</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dimas-saputra-4b395a203" target="_blank">Dimas Saputra</a></p>
+            <p>A dedicated Bachelor of Library and Information Science student with experience in editorial work, project management, and active involvement in student organizations. Skilled in information literacy, library management, and archives management, with a track record in leadership, teamwork, and time management.</p>
+        </div>
+        <div id="experience" class="section">
+            <h2>Work Experience</h2>
+            <h3>Intern, Public Relations Office (UPI Bandung)</h3>
+            <p><em>July 2024 - Aug 2024</em></p>
+            <ul>
+                <li>Uploaded revised articles and applied new templates to previous issues in the OJS Gunahumas UPI journal.</li>
+                <li>Provided constructive feedback to authors as an editor.</li>
+                <li>Collected and organized all 2024 publications on UPI from local news platforms using Google Sheets.</li>
+            </ul>
+            <h3>Editor of Curricula Journal</h3>
+            <p><em>Dec 2023 - Present</em></p>
+            <ul>
+                <li>Conveyed editorial decisions and provided suggestions for improvements to the author.</li>
+                <li>Performed substantive editing and proofreading of manuscripts.</li>
+                <li>Ensured all references and quotations comply with the specified format.</li>
+            </ul>
+            <h3>Editor of Edulib Journal</h3>
+            <p><em>Aug 2023 - Present</em></p>
+            <ul>
+                <li>Transferred information to the latest journal template.</li>
+                <li>Collaborated with the team to ensure accepted manuscripts are ready for publication.</li>
+                <li>Provided suggestions in the form of comments to the author.</li>
+            </ul>
+        </div>
+
+        <div id="organization" class="section">
+            <h2>Organizational Experience</h2>
+            <h3>Chair, Professional and Scientific Division of BEM HIMA PERPUSINFO</h3>
+            <p><em>Mar 2024 - Present</em></p>
+            <ul>
+                <li>Designed, planned, and developed programs to increase HIMA members' professionalism and knowledge.</li>
+                <li>Led and coordinated the team in executing scientific tasks.</li>
+                <li>Managed and documented information related to scientific activities.</li>
+            </ul>
+            <h3>Staff Assistant Coordinator, Secretariat of PROBUMSIL UPI</h3>
+            <p><em>Feb 2024 - Present</em></p>
+            <ul>
+                <li>Supported daily administrative tasks, including filing and scheduling.</li>
+                <li>Prepared and distributed meeting minutes.</li>
+                <li>Assisted in planning, implementing, and evaluating PROBUMSIL events.</li>
+            </ul>
+            <h3>Staff, Ministry of Education and Culture, BEM REMA UPI</h3>
+            <p><em>Aug 2023 - Jan 2024</em></p>
+            <ul>
+                <li>Helped plan and develop programs to enhance education and culture quality on campus.</li>
+                <li>Managed event logistics, including venue reservations and coordination with service providers.</li>
+                <li>Collaborated with CDC UPI logistics to implement the UCCF work program.</li>
+            </ul>
+        </div>
+
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>Exchange Student, Information Management UiTM Kedah - Oct 2024 - Present</li>
+                <li>Undergraduate Student, Library and Information Science, UPI - Sep 2022 - Present</li>
+                <li>Graduated from SMA Negeri 2 Cirebon, Department of Social Humanities - Jul 2019 - May 2022</li>
+            </ul>
+        </div>
+
+        <div id="publication" class="section">
+            <h2>Publication</h2>
+            <ul>
+                <li><strong>UI dan UX Design di SLiMS</strong> - THE LIGHT Journal of Librarianship and Information Science (July 31, 2024)</li>
+                <li><strong>Perpustakaan: Oase Perjumpaan</strong> - UNSIL Library Publisher (April 22, 2024)</li>
+                <li><strong>Application of Project-Based Learning Method in Entrepreneurship</strong> - Curricula: Journal of Curriculum Development (February 11, 2024)</li>
+                <li><strong>Wibunisme: Apakah Bukti Fanatisme Menurunkan Nasionalisme di Kalangan Mahasiswa</strong> - Jurnal Dinamika Sosial Budaya (September 1, 2023)</li>
+            </ul>
+        </div>
+
+        <div id="multimedia" class="section">
+            <h2>Multimedia</h2>
+            <h3>Audio Introduction</h3>
+            <audio controls>
+                <source src="Audio.mp3" type="audio/mpeg">
+            </audio>
+
+            <h3>Introduction Video</h3>
+            <video width="100%" controls>
+                <source src="Video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Information</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Contact Type</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:dimassaputra@upi.edu">dimassaputra@upi.edu</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+62 878-6965-9487</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/dimas-saputra-4b395a203" target="_blank">LinkedIn Profile</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Dimas Saputra. Recommended Browser: Chrome, Firefox. Best viewed at 1920x1080 resolution.</p>
+    <p>Last updated: November 2024</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        var sections = document.getElementsByClassName("section");
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.remove("active");
+        }
+        document.getElementById(sectionId).classList.add("active");
+    }
+</script>
+
+</body>
+</html>
